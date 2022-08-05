@@ -1,0 +1,139 @@
+$Mobile: 375px
+$Desktop: 1240px
+$Moderate-violet: hsl(263, 55%, 52%)
+$Very-dark-grayish-blue: hsl(217, 19%, 35%)
+$Very-dark-grayish-blue-opacity: hsl(217, 19%, 35%,0.6)
+$Very-dark-blackish-blue: hsl(219, 29%, 14%)
+$White: hsl(0, 0%, 100%)
+$Light-gray-opacity: hsl(0, 0%, 81%, 0.8)
+$Light-gray: hsl(0, 0%, 81%)
+$Light-grayish-blue: hsl(210, 46%, 95%)
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap')
+
+
+* 
+    margin: 0 
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Barlow Semi Condensed', sans-serif
+    font-size: 15px
+
+body
+    background-color: $Light-grayish-blue
+
+.container
+    width: $Mobile - 30px
+    margin: 60px auto
+    .card 
+        padding: 0 30px 30px 30px
+        border-radius: 10px
+        box-shadow: 0 0 10px rgb(0, 0,0, 0.2)
+        background-color: $White
+        margin-bottom: 20px
+        .card-header
+            padding-top: 25px
+            display: flex
+            gap: 15px
+            align-items: center
+            margin-bottom: 15px
+            img
+                width: 35px
+                height: 35px
+                border-radius: 50%
+                border: 2px solid $Light-gray-opacity
+            .header-perfil
+                .perfil-name
+                    color: $Light-gray
+                .perfil-verified
+                    color:$Light-gray-opacity
+                    font-size: 0.85em
+        .card-main
+            .main-header 
+                .main-title
+                    color: $White
+                    font-size: 1.45em
+                    font-weight: 600
+                    padding-bottom: 20px
+
+            .main-content
+                .main-text
+                    color: $Light-gray-opacity
+                    padding-bottom: 10px
+
+        &:nth-child(1)
+            background-color: $Moderate-violet
+            background-image: url("../images/bg-pattern-quotation.svg")
+            background-repeat: no-repeat
+            background-position: right top
+            background-origin: content-box
+
+        &:nth-child(2)
+            background-color: $Very-dark-grayish-blue
+
+        &:nth-child(3)
+            .card-header
+                .header-perfil
+                    .perfil-name
+                        color: $Very-dark-grayish-blue
+                    .perfil-verified
+                        color: $Very-dark-grayish-blue-opacity
+            .card-main
+                .main-header
+                    .main-title
+                        color: $Very-dark-grayish-blue
+                .main-content
+                    .main-text
+                        color: $Very-dark-grayish-blue-opacity
+        &:nth-child(4)
+            background-color: $Very-dark-blackish-blue
+            .card-header
+                img
+                    border-color: $Moderate-violet
+        &:nth-child(5)
+            .card-header
+                .header-perfil
+                    .perfil-name
+                        color: $Very-dark-grayish-blue
+                    .perfil-verified
+                        color: $Very-dark-grayish-blue-opacity
+            .card-main
+                .main-header
+                    .main-title
+                        color: $Very-dark-grayish-blue
+                .main-content
+                    .main-text
+                        color: $Very-dark-grayish-blue-opacity
+.attribution
+    text-align: center
+    margin-top: 20px
+    margin-bottom: 20px
+    font-size: 12px
+    color: $Very-dark-blackish-blue
+    a
+        color: $Very-dark-blackish-blue
+
+@media (min-width: $Desktop) 
+
+    .container
+        width: $Desktop
+        margin-top: 150px
+        display: grid
+        gap: 20px
+        .card
+            padding-bottom: 10px
+            margin-bottom: 0
+            &:nth-child(1)
+                grid-column: 1 / span 4
+                grid-row: 1
+            &:nth-child(4)
+                grid-column: 2 / span 4
+            &:nth-child(5)
+                grid-column: 6
+                grid-row: 1 / span 2
+
+            
+
+    
+    
+

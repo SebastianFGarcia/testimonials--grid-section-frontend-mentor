@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+.container {
+  width: 345px;
+  margin: 60px auto;
+}
+.container .card {
+  padding: 0 30px 30px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: hsl(0deg, 0%, 100%);
+  margin-bottom: 20px;
+}
+.container .card .card-header {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+.container .card .card-header img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid hsla(0deg, 0%, 81%, 0.8);
+}
+.container .card .card-header .header-perfil .perfil-name {
+  color: hsl(0deg, 0%, 81%);
+}
+.container .card .card-header .header-perfil .perfil-verified {
+  color: hsla(0deg, 0%, 81%, 0.8);
+  font-size: 0.85em;
+}
+.container .card .card-main .main-header .main-title {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.45em;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.container .card .card-main .main-content .main-text {
+  color: hsla(0deg, 0%, 81%, 0.8);
+  padding-bottom: 10px;
+}
+.container .card:nth-child(1) {
+  background-color: hsl(263deg, 55%, 52%);
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-origin: content-box;
+}
+.container .card:nth-child(2) {
+  background-color: hsl(217deg, 19%, 35%);
+}
+.container .card:nth-child(3) .card-header .header-perfil .perfil-name {
+  color: hsl(217deg, 19%, 35%);
+}
+.container .card:nth-child(3) .card-header .header-perfil .perfil-verified {
+  color: hsla(217deg, 19%, 35%, 0.6);
+}
+.container .card:nth-child(3) .card-main .main-header .main-title {
+  color: hsl(217deg, 19%, 35%);
+}
+.container .card:nth-child(3) .card-main .main-content .main-text {
+  color: hsla(217deg, 19%, 35%, 0.6);
+}
+.container .card:nth-child(4) {
+  background-color: hsl(219deg, 29%, 14%);
+}
+.container .card:nth-child(4) .card-header img {
+  border-color: hsl(263deg, 55%, 52%);
+}
+.container .card:nth-child(5) .card-header .header-perfil .perfil-name {
+  color: hsl(217deg, 19%, 35%);
+}
+.container .card:nth-child(5) .card-header .header-perfil .perfil-verified {
+  color: hsla(217deg, 19%, 35%, 0.6);
+}
+.container .card:nth-child(5) .card-main .main-header .main-title {
+  color: hsl(217deg, 19%, 35%);
+}
+.container .card:nth-child(5) .card-main .main-content .main-text {
+  color: hsla(217deg, 19%, 35%, 0.6);
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: hsl(219deg, 29%, 14%);
+}
+.attribution a {
+  color: hsl(219deg, 29%, 14%);
+}
+
+@media (min-width: 1240px) {
+  .container {
+    width: 1240px;
+    margin-top: 150px;
+    display: grid;
+    gap: 20px;
+  }
+  .container .card {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .container .card:nth-child(1) {
+    grid-column: 1/span 4;
+    grid-row: 1;
+  }
+  .container .card:nth-child(4) {
+    grid-column: 2/span 4;
+  }
+  .container .card:nth-child(5) {
+    grid-column: 6;
+    grid-row: 1/span 2;
+  }
+}/*# sourceMappingURL=style.css.map */
